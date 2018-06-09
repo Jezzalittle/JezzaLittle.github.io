@@ -117,14 +117,6 @@ a:focus, a:hover {
   }
 }
 
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
 
 /* Add some content at the bottom of the video/page */
 .content {
@@ -135,6 +127,12 @@ a:focus, a:hover {
     width: 100%;
     padding: 20px;
 }
+table, th, td {
+    border: 1px solid white;
+	border-collapse: collapse;
+}
+
+
 
 .masthead {
   display: table;
