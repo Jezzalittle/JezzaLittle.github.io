@@ -21,10 +21,32 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.css" rel="stylesheet">
 
+	<link rel="icon" href="img/codeicon.png">
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+	<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+	
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -76,51 +98,85 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>About Me</h2>
-            <p>Hi my name is Jeremy Little and I am an aspiring Programmer currently studying an Advanced Diploma of Professional Game Development (10343NAT) at ​the
+            <p>Jeremy Little is an aspiring Programmer currently studying an Advanced Diploma of Professional Game Development (10343NAT) at ​the
               <a href="https://www.aie.edu.au">Academy of Interactive Entertainment (AIE)</a> in Melbourne.
 			</p>
-		    </br>
+		    <div class="col-lg-8 mx-auto">
+			 <a href="#Projects" class="btn btn-circle js-scroll-trigger">
+				<i class="fa fa-angle-double-down animated"></i>
+			 </a>
+			</div>
          </div>
 	    </div>
 		</br>
-	    <div class="row" >
-	     <div class="col-sm-4">
-	     <img class="playgif" data-swap="img/SMJ/SMJ.gif" src="img/SMJ/SMJ.png" height="200" width="350">
-	     </div>
-	     <div class="col-sm-4">
-	      <img class="playgif" data-swap="img/ClientUpdater/ClientUpdater.gif" src="img/ClientUpdater/ClientUpdater.png" height="200" width="350">
-	     </div>
-	     <div class="col-sm-4">
-	      <img src="img/Eznet/EzNet.png" height="200" width="350">
-	     </div>
-		</div>
-	    </br>
-	 <div class="row" >
-	     <div class="col-sm-4">
-	     <img class="playgif" data-swap="img/Physics2D/physics-2d.gif" src="img/Physics2D/physics-2d.png" height="200" width="350">
-	     </div>
-	     <div class="col-sm-4" >
-	      <img class="playgif" data-swap="img/Echo/Echo.gif" src="img/Echo/Echo.png" height="200" width="350">
-	     </div>
-	     <div class="col-sm-4">
-	      <img class="playgif" data-swap="img/Slime/Slime.gif" src="img/Slime/Slime.png" height="200" width="350">
-	     </div>
-		</div>
-		</br>
-	 <div class="row">
-	     <div class="col-sm-4">
-	     <img class="playgif" data-swap="img/VRunner/VRunner.gif" src="img/VRunner/VRunner.png" height="200" width="350">
-	     </div>
-	     <div class="col-sm-4">
-	      <img class="playgif" data-swap="img/LightTest/LightTest.gif" src="img/LightTest/LightTest.png" height="200" width="350">
-	     </div>
-	     <div class="col-sm-4">
-	      <img class="playgif" data-swap="img/FlashLight/FlashLight.gif" src="img/FlashLight/FlashLight.png" height="200" width="350">
-	     </div>
-		</div>
-		
 	</section>
 
+	
+	 <!-- Projects -->
+	 <section id="Projects" class="content-section text-center">
+	  <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Projects</h2>
+			</div>
+		  </div>
+	     	<div class="row" >
+	          <div class="col-sm-4">
+	     	  <a href="#SMJ" class="js-scroll-trigger">
+	            <img class="playgif" data-swap="img/SMJ/SMJ.gif" src="img/SMJ/SMJ.png" height="200" width="350">
+	     	  </a>
+	          </div>
+	          <div class="col-sm-4">
+	     	 <a href="#ClientUpdater" class="js-scroll-trigger">
+	           <img class="playgif" data-swap="img/ClientUpdater/ClientUpdater.gif" src="img/ClientUpdater/ClientUpdater.png" height="200" width="350">
+	          </a>
+	     	 </div>
+	          <div class="col-sm-4">
+	     	 <a href="#EasyNet" class="js-scroll-trigger">
+			  <img class="playgif" data-swap="img/Eznet/EzNetBig.png" src="img/Eznet/EzNet.png" height="200" width="350">
+	     	 </a>
+	          </div>
+	     	</div>
+	         </br>
+	      <div class="row" >
+	          <div class="col-sm-4">
+	     	 <a href="#P2D" class="js-scroll-trigger">
+	           <img class="playgif" data-swap="img/Physics2D/physics-2d.gif" src="img/Physics2D/physics-2d.png" height="200" width="350">
+	          </a>
+	     	 </div>
+	          <div class="col-sm-4">
+	     	 <a href="#Echo" class="js-scroll-trigger">
+	           <img class="playgif" data-swap="img/Echo/Echo.gif" src="img/Echo/Echo.png" height="200" width="350">
+	     	 </a>
+	          </div>
+	          <div class="col-sm-4">
+	     	 <a href="#SlimeTime" class="js-scroll-trigger">
+	           <img class="playgif" data-swap="img/Slime/Slime.gif" src="img/Slime/Slime.png" height="200" width="350">
+	          </a>
+	     	 </div>
+	     	</div>
+	     	</br>
+	      <div class="row">
+	          <div class="col-sm-4">
+	     	 <a href="#VRunner" class="js-scroll-trigger">
+	           <img class="playgif" data-swap="img/VRunner/VRunner.gif" src="img/VRunner/VRunner.png" height="200" width="350">
+	     	 </a>
+	     	</div>
+	          <div class="col-sm-4">
+	     	 <a href="#Light2D" class="js-scroll-trigger">
+	           <img class="playgif" data-swap="img/LightTest/LightTest.gif" src="img/LightTest/LightTest.png" height="200" width="350">
+	          </a>
+	     	 </div>
+	          <div class="col-sm-4">
+	     	 <a href="#Flashlight" class="js-scroll-trigger">
+	           <img class="playgif" data-swap="img/FlashLight/FlashLight.gif" src="img/FlashLight/FlashLight.png" height="200" width="350">
+	          </a>
+	     	 </div>
+	     	</div>
+		</div>
+	</section>
+
+	
 	<!-- SMJ -->
     <section id="SMJ" class="content-section text-center">
 	 <div class="container">
@@ -186,7 +242,7 @@
 	  </div>
 	  <div class="row">
 	   <div class="col-lg-12 mx-auto">
-		<img src="img/EzNet/Eznet.png" height="495" width="800">	   
+		<img src="img/EzNet/EzNetBig.png" height="495" width="800">	   
 		</div>
 	  </div>
 	  </div>
